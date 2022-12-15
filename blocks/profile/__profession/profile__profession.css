@@ -1,0 +1,39 @@
+.profile__profession {
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  line-height: 22px;
+  text-align: left;
+  color: #fff;
+}
+
+.place__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 770px) {
+  .place__paragraph {
+    width: 100%;
+    font-size: 16px;
+    line-height: 163%;
+    margin-bottom: 25px;
+    letter-spacing: -0.040em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .place__paragraph {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .place__paragraph {
+    max-width: 288px;
+    padding-left: 16px;
+    padding-right: 16px;
+    letter-spacing: 0;
+  }
+}

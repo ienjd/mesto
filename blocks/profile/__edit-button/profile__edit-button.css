@@ -1,0 +1,9 @@
+.profile__edit-button {
+  max-width: 24px;
+  width: 100%;
+  height: 24px;
+  position:absolute;
+  top: 15px;
+  right: 0;
+}
+
