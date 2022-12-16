@@ -1,0 +1,10 @@
+.elements {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
+  grid-auto-flow: dense;
+  gap: 16px 20px;
+  box-sizing: border-box;
+}
