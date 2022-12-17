@@ -21,6 +21,10 @@
   @import url(../blocks/profile/__add-button/profile__add-button.css);
   @import url(../blocks/profile/__add-button-plus/profile__add-button-plus.css);
 
+  @import url(../blocks/elements/elements.css);
+  @import url(../blocks/elements/__card/elements__card.css);
+  @import url(../blocks/elements/__label/elements__label.css);
+
   
 
   
