@@ -1,13 +1,10 @@
 .elements__label {
-  height: 55px;
+  height: 80px;
   margin-top: 0;
-  margin-left: 21px;
-  padding-top: 25px;
-  font-family: Inter;
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 29px;
-  letter-spacing: 0em;
+  padding-left: 21px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
   text-align: left;
-
 }
