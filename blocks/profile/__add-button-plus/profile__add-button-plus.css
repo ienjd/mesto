@@ -6,3 +6,12 @@
   margin: auto;
 }
 
+@media screen and (max-width: 500px) {
+  .profile__add-button-plus {
+    max-width: 16px;
+    width: 100%;
+    max-height: 16px;
+    height: 100%;
+  }
+}
+

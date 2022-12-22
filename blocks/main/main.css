@@ -8,11 +8,3 @@
   align-items: center; 
 }
 
-@media screen and (max-width: 320px) {
-  .main {
-    width: 320px;
-    max-width: 100%;
-    margin-bottom: 64px;
-    }
-  }
-    
