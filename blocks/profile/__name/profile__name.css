@@ -6,6 +6,9 @@
   line-height: 48px;
   margin: 0;
   padding: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   display: grid;
   align-items: start;
   text-align: left;
