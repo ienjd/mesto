@@ -17,54 +17,62 @@
         <div class="profile__avatar"></div>
         <div class="profile__info">
           <h1 class="profile__name">Жак-Ив Кусто</h1>
-          <img class="profile__edit-button" type="button" src="./images/Edit_Button.svg" alt="иконка_Карандаш">
           <p class="profile__profession">Исследователь океана</p>
         </div>
-        <div class="profile__add-button">
-          <img class="profile__add-button-plus" type="button" src="./images/Vector.svg" alt="иконка_Плюс">
-        </div> 
+        <button type="button" class="profile__edit-button-shell">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="profile__edit-button">
+            <rect x="0.5" y="0.5" width="23" height="23" stroke="white"/>
+            <path d="M17 8.32827L9.60377 15.7666L8.28302 14.4194L15.6604 7L17 8.32827ZM7 17L8.96226 16.4118L7.58491 15.0835L7 17Z" fill="white"/>
+          </svg>
+        </button>
+        <button type="button" class="profile__add-button-shell">
+          <svg width="150" height="50" viewBox="0 0 150 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="profile__add-button">
+            <rect x="1" y="1" width="148" height="48" rx="1" stroke="white" stroke-width="2"/>
+            <path d="M86 23.7778H76.2222V14H73.7778V23.7778H64V26.2222H73.7778V36H76.2222V26.2222H86V23.7778Z" fill="white"/>
+          </svg>
+        </button>
       </section>
       <section class="elements">
         <figure class="elements__card">
           <img class="elements__card-image" src="./images/Карачаевск.jpg" alt="Крепость">
           <figcaption class="elements__label">
             <p class="elements__label-text">Карачаевск</p>
-            <div class="elements__like" type="button"></div>
+            <div class="elements__like"></div>
           </figcaption>
         </figure>
         <figure class="elements__card">
           <img class="elements__card-image" src="./images/Эльбрус.jpg" alt="Долина_на_фоне_горы">
           <figcaption class="elements__label">
             <p class="elements__label-text">гора Эльбрус</p>
-            <div class="elements__like" type="button"></div>
+            <div class="elements__like"></div>
           </figcaption>
         </figure>
         <figure class="elements__card">
           <img class="elements__card-image" src="./images/Домбай.png" alt="Лес на фоне горы">
           <figcaption class="elements__label">
             <p class="elements__label-text">Домбай</p> 
-            <div class="elements__like" type="button"></div>
+            <div class="elements__like"></div>
           </figcaption>
         </figure>
         <figure class="elements__card">
           <img class="elements__card-image" src="./images/Эльбрус.jpg" alt="Долина на фоне горы">
           <figcaption class="elements__label">
             <p class="elements__label-text">Гора Эльбрус</p> 
-            <div class="elements__like" type="button"></div>
+            <div class="elements__like"></div>
           </figcaption>
         </figure>
         <figure class="elements__card">
           <img class="elements__card-image" src="./images/Домбай.png" alt="Лес на фоне горы">
           <figcaption class="elements__label">
             <p class="elements__label-text">Домбай</p> 
-            <div class="elements__like" type="button"></div>
+            <div class="elements__like"></div>
           </figcaption>
         </figure>
         <figure class="elements__card">
           <img class="elements__card-image" src="./images/Карачаевск.jpg" alt="Крепость">
           <figcaption class="elements__label">
             <p class="elements__label-text">Карачаево-Черкессия</p>
-            <div class="elements__like" type="button"></div>
+            <div class="elements__like"></div>
           </figcaption>
         </figure>
       </section>
@@ -82,7 +90,7 @@
         <div class="popup__borderline"></div>
         <button type="submit" class="popup__submit">Сохранить</button>
       </form>    
-      <img class="popup__close-icon" type="button" src="../mesto/images/Criss-cross.svg" alt="Крестик">
+      <img class="popup__close-icon" src="../mesto/images/Criss-cross.svg" alt="Крестик">
     </div>
   </div>
   <script src="scripts/index.js"></script>
