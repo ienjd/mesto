@@ -9,6 +9,7 @@
   right: -40px;
   color: #fff;
   box-sizing: border-box;
+  border: none;
 }
 
 .popup__close-icon:hover {
