@@ -11,6 +11,7 @@
   @import url(../blocks/header/__line/header__line.css);
 
   @import url(../blocks/main/main.css);
+  @import url(../blocks/main/__button/main__button.css);
 
   @import url(../blocks/profile/profile.css);
   @import url(../blocks/profile/__avatar/profile__avatar.css);
@@ -40,6 +41,7 @@
   @import url(../blocks/popup/__borderline/popup__borderline.css);
   @import url(../blocks/popup/__submit/popup__submit.css);
   @import url(../blocks/popup/__close-icon/popup__close-icon.css);
+  @import url(../blocks/popup/__crisscross/popup__crisscross.css);
 
 
   

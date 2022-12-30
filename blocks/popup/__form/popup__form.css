@@ -1,5 +1,6 @@
 .popup__form {
   background-color: #fff;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -8,6 +9,7 @@
   margin-top: 195px;
   padding-top: 34px;
   padding-left: 36px;
+  padding-bottom: 0;
   width: 430px;
   height: 330px;
 }

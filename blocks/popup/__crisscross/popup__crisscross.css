@@ -1,0 +1,13 @@
+.popup__crisscross {
+  background-image: url('../../../images/Crisscross.svg');
+  width: 32px;
+  height: 32px;
+}
+
+@media screen and (max-width: 500px) {
+  .popup__crisscross  {
+    background-image: url('../../../images/Crisscross_500px.svg');
+    width: 20px;
+    height: 20px;
+  }
+}

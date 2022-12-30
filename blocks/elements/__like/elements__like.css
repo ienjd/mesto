@@ -1,11 +1,10 @@
 .elements__like {
+  grid-area: like;
   background-image: url('../../../images/Vector-1.svg');
   background-repeat: no-repeat;
-  position: absolute;
   width: 22px;
   height: 19px;
-  top: 30px;
-  right: 30px;
+  align-self: center;
 }
 
 .elements__like:hover {
