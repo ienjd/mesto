@@ -1,18 +1,22 @@
-.elements__like {
+.elements__like-shell {
   grid-area: like;
   background-image: url('../../../images/Vector-1.svg');
+  background-position: center;
+  background-color: white;
   background-repeat: no-repeat;
   width: 22px;
   height: 19px;
-  align-self: center;
+  align-self: center
 }
 
-.elements__like:hover {
+.elements__like-shell:hover {
   opacity: 0.5;
   cursor: pointer;
 }
 
-.elements__like:active {
+.elements__like-shell:active {
   background-image: url('../../../images/Union.svg');
 }
+
+
 
