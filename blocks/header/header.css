@@ -7,6 +7,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px rgba(84, 84, 84, 0.7) solid;
+  border-left: none; 
 }
 
 @media screen and (max-width: 500px) {

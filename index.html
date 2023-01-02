@@ -10,9 +10,8 @@
   <div class="page">
     <header class="header">
       <img class="header__logo" src="./images/logo-1.svg" alt="Плашка Место">
-      <div class="header__line"></div>
     </header>
-    <div class="main">
+    <main class="main">
       <section class="profile">
         <div class="profile__avatar"></div>
         <div class="profile__info">
@@ -27,61 +26,59 @@
         </button>
       </section>
       <section class="elements">
-        <figure class="elements__card">
+        <article class="elements__card">
           <img class="elements__card-image" src="./images/Карачаевск.jpg" alt="Крепость">
-          <figcaption class="elements__label">
-            <p class="elements__label-text">Карачаевск</p>
+          <div class="elements__label">
+            <h1 class="elements__label-text">Карачаевск</h1>
             <div class="elements__like"></div>
-          </figcaption>
-        </figure>
-        <figure class="elements__card">
+          </div>
+        </article>
+        <article class="elements__card">
           <img class="elements__card-image" src="./images/Эльбрус.jpg" alt="Долина_на_фоне_горы">
-          <figcaption class="elements__label">
-            <p class="elements__label-text">гора Эльбрус</p>
+          <div class="elements__label">
+            <h1 class="elements__label-text">гора Эльбрус</h1>
             <div class="elements__like"></div>
-          </figcaption>
-        </figure>
-        <figure class="elements__card">
+          </div>
+        </article>
+        <article class="elements__card">
           <img class="elements__card-image" src="./images/Домбай.png" alt="Лес на фоне горы">
-          <figcaption class="elements__label">
-            <p class="elements__label-text">Домбай</p> 
+          <div class="elements__label">
+            <h1 class="elements__label-text">Домбай</h1> 
             <div class="elements__like"></div>
-          </figcaption>
-        </figure>
-        <figure class="elements__card">
+          </div>
+        </article>
+        <article class="elements__card">
           <img class="elements__card-image" src="./images/Эльбрус.jpg" alt="Долина на фоне горы">
-          <figcaption class="elements__label">
-            <p class="elements__label-text">Гора Эльбрус</p> 
+          <div class="elements__label">
+            <h1 class="elements__label-text">Гора Эльбрус</h1> 
             <div class="elements__like"></div>
-          </figcaption>
-        </figure>
-        <figure class="elements__card">
+          </div>
+        </article>
+        <article class="elements__card">
           <img class="elements__card-image" src="./images/Домбай.png" alt="Лес на фоне горы">
-          <figcaption class="elements__label">
-            <p class="elements__label-text">Домбай</p> 
+          <div class="elements__label">
+            <h1 class="elements__label-text">Домбай</h1> 
             <div class="elements__like"></div>
-          </figcaption>
-        </figure>
-        <figure class="elements__card">
+          </div>
+        </article>
+        <article class="elements__card">
           <img class="elements__card-image" src="./images/Карачаевск.jpg" alt="Крепость">
-          <figcaption class="elements__label">
-            <p class="elements__label-text">Карачаево-Черкессия</p>
+          <div class="elements__label">
+            <h1 class="elements__label-text">Карачаево-Черкессия</h1>
             <div class="elements__like"></div>
-          </figcaption>
-        </figure>
+          </div>
+        </article>
       </section>
-    </div>
-    <footer class="footer">© 2020 Mesto Russia</footer>
+    </main>
+    <footer class="footer"><p class="footer__copyright">© 2020 Mesto Russia</p></footer>
   </div>
 
-  <div class="popup popup_closed">
+  <div class="popup">
     <div class="popup__form">
-      <h1 class="popup__heading">Редактировать профиль</h1>
+      <h2 class="popup__heading">Редактировать профиль</h2>
       <form name="form" class="popup__input">
-        <input type="text" placeholder="Жак-Ив Кусто" class="popup__input-text popup__input-text_type_name">
-        <div class="popup__borderline"></div>
-        <input type="text" placeholder="Исследователь океана" class="popup__input-text popup__input-text_type_profession">
-        <div class="popup__borderline"></div>
+        <input type="text" placeholder="Имя" class="popup__input-text popup__input-text_type_name">
+        <input type="text" placeholder="О себе" class="popup__input-text popup__input-text_type_profession">
         <button type="submit" class="popup__submit">Сохранить</button>
         <button type="button" class="popup__close-icon">
           <img class="popup__crisscross" src="./images/Crisscross.svg" alt="Крестик">
