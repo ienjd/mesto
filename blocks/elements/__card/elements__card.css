@@ -1,5 +1,5 @@
 .elements__card {
-  margin: 0;
+  margin: auto;
   max-width: 282px;
   max-height: 361px;
   width: 100%;
@@ -7,6 +7,12 @@
   background-color: #fff;
   overflow: hidden;
 }
+
+/*@media screen and (max-width: 585px) {
+  .elements__card {
+    margin: auto;
+  }
+}*/
 
 @media screen and (max-width: 320px) {
   .elements__card {
