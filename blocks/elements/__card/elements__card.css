@@ -8,12 +8,6 @@
   overflow: hidden;
 }
 
-/*@media screen and (max-width: 585px) {
-  .elements__card {
-    margin: auto;
-  }
-}*/
-
 @media screen and (max-width: 320px) {
   .elements__card {
     margin-left: 19px;
