@@ -1,5 +1,5 @@
 .main {
-  max-width: 880px;
+  max-width: 900px;
   width: 100%;
   margin: 0 auto 0;
   padding: 0;
@@ -7,17 +7,3 @@
   flex-direction: column;
   align-items: center; 
 }
-
-@media screen and (max-width: 900px) {
-  .main {
-    margin-left: 19px;
-    margin-right: 19px;
-    }
-  }
-
-@media screen and (max-width: 900px) {
-  .main {
-    margin-left: 0;
-    margin-right: 0;
-    }
-  }

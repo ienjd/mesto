@@ -3,7 +3,7 @@
   flex-direction: row;
   align-self: flex-start;
   align-items: start;
-  max-width: 318px;
+  max-width: 282px;
   width: 100%;
   margin: 66px auto 60px 200px;
   padding: 0;
@@ -11,7 +11,6 @@
 
 @media screen and (max-width: 500px) {
   .footer {
-    max-width: 282px;
     margin: 48px 19px 36px;
   }
 }
