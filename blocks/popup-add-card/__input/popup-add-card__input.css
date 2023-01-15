@@ -1,0 +1,19 @@
+.popup-add-card__input {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  width: 358px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .popup-add-card__input {
+    width: 238px;
+    margin-bottom: 20px;
+  }
+}
+

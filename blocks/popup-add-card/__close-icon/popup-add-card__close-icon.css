@@ -1,0 +1,28 @@
+.popup-add-card__close-icon {
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0;
+  padding: 0;
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  color: #fff;
+  box-sizing: border-box;
+  border: none;
+}
+
+.popup-add-card__close-icon:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .popup-add-card__close-icon {
+    width: 20px;
+    height: 20px;
+    top: -35px;
+    right: 0;
+  }
+}
+
