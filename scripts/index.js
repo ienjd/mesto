@@ -43,9 +43,12 @@ initialCards.forEach(function(element){
   
     cardElement.querySelector('.elements__card-image').src = element.link;
     cardElement.querySelector('.elements__label-text').textContent = element.name;
-  
+    cardElement.querySelector('.elements__like-shell').addEventListener('click', function (evt) {
+      const likeButton = evt.target;
+      likeButton.classList.toggle('elements__like-shell_active'); 
+    })
     elementsCard.append(cardElement)
-    });
+});
 
 function openForm() {
     nameUser.value = profileName.textContent;
