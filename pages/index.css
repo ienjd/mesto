@@ -29,6 +29,8 @@
   @import url(../blocks/elements/__label-text/elements__label-text.css);
   @import url(../blocks/elements/__like-shell/elements__like-shell.css);
   @import url(../blocks/elements/__like-shell/__like-shell_active/elements__like-shell_active.css);
+  @import url(../blocks/elements/__trash-shell/elements__trash-shell.css);
+  @import url(../blocks/elements/__trash/elements__trash.css);
 
   @import url(../blocks/footer/footer.css);
   @import url(../blocks/footer/__copyright/footer__copyright.css);

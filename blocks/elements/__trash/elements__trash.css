@@ -1,0 +1,14 @@
+.elements__trash {
+  width: 18px;
+  height: 19px;
+  border: 1px red solid;
+  z-index: 2;
+}
+
+.elements__trash:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+
+
