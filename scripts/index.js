@@ -13,6 +13,7 @@ const placeImage = formElement.querySelector('.popup__input-text_type_link');
 const profileName = document.querySelector('.profile__name');
 const profileProfession = document.querySelector('.profile__profession');
 const elementsCard = document.querySelector('.elements');
+const cardElement = document.querySelector('.elements__card');
 const cardTemplate = document.querySelector('.card-template').content;
 const initialCards = [
     {
@@ -41,6 +42,10 @@ const initialCards = [
     }
   ];
 
+  function deleteCard(event) {
+    event.target.closest('.elements__card').remove();
+  };
+
   function sortCard() {
     initialCards.forEach(function(element){
       const cardElement = cardTemplate.cloneNode(true);
@@ -50,11 +55,13 @@ const initialCards = [
       cardElement.querySelector('.elements__like-shell').addEventListener('click', function (evt) {
         const likeButton = evt.target;
         likeButton.classList.toggle('elements__like-shell_active'); 
-      })
-      elementsCard.append(cardElement)
+      });
+      cardElement.querySelector('.elements__trash-shell').addEventListener('click', deleteCard);
+    
+      elementsCard.append(cardElement);
   });
-    };
-
+      
+};
 sortCard();
 
 function openForm() {
@@ -94,4 +101,5 @@ formElement.addEventListener('submit', formSubmit);
 
 
 
-addCardElement.addEventListener('submit', submitCard());
+
+//addCardElement.addEventListener('submit', submitCard());
