@@ -8,12 +8,14 @@ const formElement = document.querySelector('.popup__input');
 const nameUser = formElement.querySelector('.popup__input-text_type_name');
 const professionUser = formElement.querySelector('.popup__input-text_type_profession');
 const addCardElement = document.querySelector('.popup-add-card__input');
-const placeTitle = formElement.querySelector('.popup__input-text_type_location');
-const placeImage = formElement.querySelector('.popup__input-text_type_link');
+const placeTitle = document.querySelector('.popup__input-text_type_location');
+const placeImage = document.querySelector('.popup__input-text_type_link');
 const profileName = document.querySelector('.profile__name');
 const profileProfession = document.querySelector('.profile__profession');
 const elementsCard = document.querySelector('.elements');
 const cardElement = document.querySelector('.elements__card');
+const cardImage = document.querySelector('.elements__card-image');
+const cardText = document.querySelector('.elements__label-text');
 const cardTemplate = document.querySelector('.card-template').content;
 const initialCards = [
     {
@@ -44,6 +46,10 @@ const initialCards = [
 
   function deleteCard(event) {
     event.target.closest('.elements__card').remove();
+  };
+
+  function likeCard(event) {
+    event.target.classList.toggle('elements__like-shell_active');
   };
 
   function sortCard() {
@@ -97,9 +103,37 @@ function formSubmit (evt) {
     profileProfession.textContent = professionUser.value;
     closeForm();
 };
+
 formElement.addEventListener('submit', formSubmit);
 
+function addCardEventListeners (card) {
+	const deleteButton = card.querySelector('.elements__trash-shell');
+	deleteButton.addEventListener('click', deleteCard);
 
+  const likeButton = card.querySelector('.elements__like-shell');
+  likeButton.addEventListener('click', likeCard);
+};
 
+function createCard(name, link) {
+	const card = cardTemplate.cloneNode(true);
+	const cardText = card.querySelector('.elements__label-text');
+	cardText.textContent = name;
+  const cardImage = card.querySelector('.elements__card-image');
+	cardImage.src = link;
+  addCardEventListeners(card);
+  cardCloseForm();
+	return card;
+}
 
-//addCardElement.addEventListener('submit', submitCard());
+function addCard(card) {
+	elementsCard.prepend(card);
+}
+
+function submitForm(event) {
+	event.preventDefault();
+
+	const newCard = createCard(placeTitle.value, placeImage.value);
+	addCard(newCard);
+}
+
+addCardElement.addEventListener('submit', submitForm);
