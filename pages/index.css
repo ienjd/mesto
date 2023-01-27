@@ -55,6 +55,10 @@
   @import url(../blocks/popup-add-card/__close-icon/popup-add-card__close-icon.css);
   @import url(../blocks/popup-add-card/__crisscross/popup-add-card__crisscross.css);
 
+  @import url(../blocks/popup-image/popup-image.css);
+  @import url(../blocks/popup-image/__fullscreen/popup-image__fullcreen.css);
+  @import url(../blocks/popup-image/__image/popup-image__image.css);
+
 
 
 

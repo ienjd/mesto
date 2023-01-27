@@ -1,0 +1,13 @@
+.popup-image__fullscreen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  margin: auto;
+  max-width: 75vw;
+  max-height: 75vh;
+  z-index: 2;
+}
+
+
