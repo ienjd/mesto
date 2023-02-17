@@ -130,7 +130,7 @@ function addCardEventListeners (card) {
   likeButton.addEventListener('click', likeCard);
 };
 
-/*function createCard(name, link) {
+function createCard(name, link) {
 	const card = cardTemplate.cloneNode(true);
 	const cardText = card.querySelector('.elements__label-text');
 	cardText.textContent = name;
