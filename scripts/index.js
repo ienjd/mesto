@@ -14,9 +14,13 @@ const profileName = document.querySelector('.profile__name');
 const profileProfession = document.querySelector('.profile__profession');
 const elementsCard = document.querySelector('.elements');
 const cardElement = document.querySelector('.elements__card');
-const cardImage = document.querySelector('.elements__card-image');
+
 const cardText = document.querySelector('.elements__label-text');
 const cardTemplate = document.querySelector('.card-template').content;
+const imagePopup = document.querySelector('.popup-image');
+const image = imagePopup.querySelector('.fullscreen__image');
+const labelImage = imagePopup.querySelector('.fullscreen__label');
+const closeImagePopup = imagePopup.querySelector('.fullscreen__close-icon');
 const initialCards = [
     {
       name: 'Архыз',
@@ -43,6 +47,18 @@ const initialCards = [
       link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
     }
   ];
+
+  function openImagePopup(cardImage) {
+      
+    image.src = cardImage.src;
+    image.alt = cardImage.alt;
+    labelImage.textContent = cardText.textContent;
+    imagePopup.classList.add('.popup-image_opened');
+  };   
+    const cardImage = elementsCard.querySelector('elements__card-image');
+    cardImage.addEventListener('click', () => {
+    openImagePopup(cardImage);
+ });
 
   function deleteCard(event) {
     event.target.closest('.elements__card').remove();
@@ -114,7 +130,7 @@ function addCardEventListeners (card) {
   likeButton.addEventListener('click', likeCard);
 };
 
-function createCard(name, link) {
+/*function createCard(name, link) {
 	const card = cardTemplate.cloneNode(true);
 	const cardText = card.querySelector('.elements__label-text');
 	cardText.textContent = name;
@@ -137,3 +153,4 @@ function submitForm(event) {
 }
 
 addCardElement.addEventListener('submit', submitForm);
+

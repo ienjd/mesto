@@ -1,0 +1,9 @@
+.fullscreen__label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 0;
+  margin-top: 0;
+  color: #fff;
+  border: 1px blue solid;
+}
